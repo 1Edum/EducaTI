@@ -6,10 +6,21 @@ header div#faixa_azul{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
     
  }
- header div#barra{
+ div#barra{
      width: 50%;
      height: 50px;
-     background-color: #ffffff;
+     background-color: white;
      display: flex;
-    
+
  }
+ div.barra h1{
+    text-align: center;
+ }
+
+    
+ 
+        
+        
+    
+     
+ 
