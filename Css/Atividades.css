@@ -1,10 +1,14 @@
-{
+body {
     box-sizing: border-box;
 }
   
-  body {
-    margin: 0; 
-    background: #ffffff;
+
+body div#astronauta{
+   background: url("../Imagens/fundo.png");
+background: 100%;
+display: flex;
+justify-content: center;
+
 }
   
   button {
@@ -13,8 +17,8 @@
     padding: 0;
     cursor: pointer;
 }
-  
-  .sidebar {
+
+.sidebar {
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -115,5 +119,5 @@
   body.open .sidebar button > span {
     opacity: 1;
     animation: appear 0.3s both;
+  
   }
-
