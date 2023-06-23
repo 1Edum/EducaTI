@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 800px;
+    }
+    .col {
+      width: 50%;
+    }
+    form {
+      width: 100%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+      margin-right: 100%;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    input[type="submit"],
+    input[type="button"] {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="button"] {
+      background-color: #ccc;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="col">
+      <form>
+        <h2>Cadastro</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="telefone">Telefone/Celular:</label>
+        <input type="tel" id="telefone" name="telefone">
+        
+        <label for="nome-mae">Nome da Mãe:</label>
+        <input type="text" id="nome-mae" name="nome-mae" required>
+        
+        <label for="rg">RG:</label>
+        <input type="text" id="rg" name="rg" required>
+        
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+        
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+      </form>
+    </div>
+    
+    <div class="col">
+      <form>
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="text" id="data-nascimento" name="data-nascimento" required>
+        
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+        
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        
+        <label for="confirma-senha">Confirmação de Senha:</label>
+        <input type="password" id="confirma-senha" name="confirma-senha" required
+        <!-- Campos de cadastro aqui -->
+        <input type="submit" value="Salvar">
+        <input type="button" value="Cancelar">
+        </form>
