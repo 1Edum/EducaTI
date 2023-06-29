@@ -1,103 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Cadastro</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      width: 800px;
-    }
-    .col {
-      width: 50%;
-    }
-    form {
-      width: 100%;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #f5f5f5;
-      margin-right: 100%;
-    }
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="tel"] {
-      width: 100%;
-      padding: 5px;
-      margin-top: 5px;
-    }
-    input[type="submit"],
-    input[type="button"] {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    input[type="button"] {
-      background-color: #ccc;
-      margin-right: 10px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tela de cadastro</title>
+  <link rel="stylesheet" href="/Css/Cadastro.css">
 </head>
 <body>
-  <div class="container">
-    <div class="col">
-      <form>
-        <h2>Cadastro</h2>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="telefone">Telefone/Celular:</label>
-        <input type="tel" id="telefone" name="telefone">
-        
-        <label for="nome-mae">Nome da Mãe:</label>
-        <input type="text" id="nome-mae" name="nome-mae" required>
-        
-        <label for="rg">RG:</label>
-        <input type="text" id="rg" name="rg" required>
-        
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" required>
-        
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" required>
-      </form>
-    </div>
-    
-    <div class="col">
-      <form>
-        <label for="data-nascimento">Data de Nascimento:</label>
-        <input type="text" id="data-nascimento" name="data-nascimento" required>
-        
-        <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" required>
-        
-        <label for="endereco">Endereço:</label>
-        <input type="text" id="endereco" name="endereco" required>
-        
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" name="senha" required>
-        
-        <label for="confirma-senha">Confirmação de Senha:</label>
-        <input type="password" id="confirma-senha" name="confirma-senha" required>
-        <!-- Campos de cadastro aqui -->
-        <input type="submit" value="Salvar">
-        <input type="button" value="Cancelar">
-        </form>
+  <div id="main-container">
+    <h1>Cadastre-se para acessar o sistema</h1>
+    <form id="register-form" action="">
+      <div class="full-box">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+      </div>
+      <div class="half-box spacing">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+      </div>
+      <div class="half-box">
+          <label for="lastname">Sobrenome</label>
+          <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" data-required data-only-letters>
+      </div>
+      <div class="half-box spacing">
+        <label for="lastname">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+      </div>
+      <div class="half-box">
+        <label for="passconfirmation">Confirmação de senha</label>
+        <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
+      </div>
+      <div>
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">Eu li e aceito os <a href="https://www.mcdonalds.com.br/quemsomos/termos-app">termos de uso</a></label>
+         <br>
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">Sou Administrador<a href="https://www.mcdonalds.com.br/quemsomos/termos-app"></a></label>
+        <br>
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">Sou Aluno <a href="https://www.mcdonalds.com.br/quemsomos/termos-app"></a></label>
+        <br>
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement" id="agreement-label">Sou Professor <a href="https://www.mcdonalds.com.br/quemsomos/termos-app"></a></label>
+        <br>
+      </div>
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="Registrar">
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+  <script src="/Java/cadastro.js"></script>
+</body>
+</html>
