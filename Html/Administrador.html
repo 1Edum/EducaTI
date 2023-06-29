@@ -1,6 +1,4 @@
-
 <!DOCTYPE html>
-
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -8,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adiministrador/EDUCA TI</title>
     <link rel="stylesheet" href="/Css/Administrador.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-
   <body>
     <header>
       <nav>
-       <a href="" class="logo">
-        <img src="/Imagens/logo-branca.png" alt="">
-       </a>
+        <!-- Logo -->
+        <div class="logo">
+          <img src="/Imagens/logo-branca.png" alt="">
+        </div>
+        <!-- Menu Responsivo -->
         <div class="mobile-menu">
           <div class="line1"></div>
           <div class="line2"></div>
@@ -29,116 +29,136 @@
         </ul>
       </nav>
     </header>
+    <!-- Conteúdo 1 -->
     <main>
-      <section>
-        <div class="container" id="mudar">
-          <div class="titulo">Cadastro</div>
-            <div class="drop">
-              <ul class="wrapper-menu">
-                <li class="wrapper-dropdown">
-                  <a href="index.html">Home</a>
-                  <ul class="dropdown">
-                    <li>
-                      <input type="checkbox" class="check"/>
-                      <label for="check" class="trabalheSubEsqTitulo">1 Ano</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="check"/>
-                      <label for="check" class="trabalheSubEsqTitulo">2 Ano</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="check"/>
-                      <label for="check" class="trabalheSubEsqTitulo">3 Ano</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="check"/>
-                      <label for="check" class="trabalheSubEsqTitulo">4 Ano</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="check"/>
-                      <label for="check" class="trabalheSubEsqTitulo">5 Ano</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="check"/>
-                      <label for="check" class="trabalheSubEsqTitulo">6 Ano</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="check"/>
-                      <label for="check" class="trabalheSubEsqTitulo">7 Ano</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="check"/>
-                      <label for="check" class="trabalheSubEsqTitulo">8 Ano</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" class="check"/>
-                      <label for="check" class="trabalheSubEsqTitulo">9 Ano</label>
-                    </li>
-                  </ul>
-                </li>
-               </ul>
-              </div>
-              <div class="2">
-              <div class="op1">       <!--Direita-->
-                <div><input type="text" placeholder="Nome Completo"> </div>
-                
-              </div>
-              <div class="op2"> <!--Esquerda-->
-                <div><input type="text" placeholder="Email"></div>
-                </div>
+      <section class="corpo-1">
+        <!-- Cabeçalho -->
+        <div class="conteúdo-1" >
+          <div class="titulo" id="mudar"><h2>Cadastrar Usúario para a Sala</h2></div>
+          <div class="sala">
+            <div class="bloco">
+              <p id="mostrar-sala"></p>
             </div>
-        </div>
-          </form>
           </div>
-        </div>
-      </section>
-    </main>
-    <script src="/Java/mobile-navbar.js"></script>
+          <!-- Dropdown -->
+          <div class="menu-bar">
+            <ul>
+                <li> <p>Turmas</p><i class="fas fa-caret-down"></i>
+                    <div class="dropdown-menu">
+                        <ul>
+                          <li>
+                            <p>1 Ano<i class="fas fa-caret-right"></i></p>
+                            <div class="dropdown-menu-1">
+                              <ul>
+                                <li onclick="ano1a()">1 Ano A</li>
+                                <li onclick="ano1b()">1 Ano B</li>
+                              </ul>
+                            </div>
+                          </li>                 
+                        </ul>
+                        <ul>
+                            <li>
+                              <p>2 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano2a()">2 Ano A</li>
+                                  <li onclick="ano2b()">2 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>3 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano3a()">3 Ano A</li>
+                                  <li onclick="ano3b()">3 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>4 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano4a()">4 Ano A</li>
+                                  <li onclick="ano4b()">4 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>5 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano5a()">5 Ano A</li>
+                                  <li onclick="ano5b()">5 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>6 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano6a()">6 Ano A</li>
+                                  <li onclick="ano5b()">6 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>7 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano7a()">7 Ano A</li>
+                                  <li onclick="ano7b()">7 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>8 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano8a()">8 Ano A</li>
+                                  <li onclick="ano8b()">8 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                          <ul>
+                            <li>
+                              <p>9 Ano<i class="fas fa-caret-right"></i></p>
+                              <div class="dropdown-menu-1">
+                                <ul>
+                                  <li onclick="ano9a()">9 Ano A</li>
+                                  <li onclick="ano9b()">9 Ano B</li>
+                                </ul>
+                              </div>
+                            </li>                 
+                          </ul>
+                    </div>
+                </li>
+            </ul>
+            </div>
+            <div class="formulario">
+              <div class="esquerda">
+                <input type="text" class="barra1" placeholder="Nome:">
+                <input type="text" class="barra1" placeholder="Email">
+
+              </div>
+              <div class="direita">
+                <input type="text" class="barra1" placeholder="Sobrenome">
+                <input type="text" class="barra1" placeholder="Nome da Mãe">
+              </div>
+            </div>
+    <script src="/Java/Administrador.js"></script>
   </body>
   </html>
-
-<!DOCTYPE html>
-
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adiministrador/EDUCA TI</title>
-    <link rel="stylesheet" href="/Css/administrador.css">
-  </head>
-
-  <body>
-    <header>
-      <nav>
-       <a href="" class="logo">
-        <img src="/Imagens/logo-branca.png" alt="">
-       </a>
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-list">
-          <li><a href="#mudar">Modificar Usuários</a></li>
-          <li><a href="#">Turmas</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="container">
-          <div class="titulo">Cadastro</div>
-          <div class="op1">
-            <div><input type="text" placeholder="Nome Completo" class=""> </div>
-          </div>
-          <div class="op2">
-            <div><input type="text" placeholder="Email" class=""></div>
-          </div>
-   
-    <script src="/Java/mobile-navbar.js"></script>
-  </body>
-  </html>
-
