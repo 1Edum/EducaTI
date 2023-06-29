@@ -154,6 +154,7 @@ p#mostrar-sala{
   width: 12%;
   padding: 0;
   position: relative;
+  top: -100px;
   left: 20px;
   background-color: var(--principal);
   margin: 30px 0px 0px 0px;
@@ -167,6 +168,7 @@ p#mostrar-sala{
 li p{
   display: inline;
   padding-left: 10px;
+  cursor: pointer;
 }
 .menu-bar li {
   padding: 10px 0px;
@@ -209,6 +211,8 @@ li p{
 
 .dropdown-menu-1 {
   display: none;
+  z-index: 10;
+  cursor: pointer;
 
 }
 
@@ -221,32 +225,75 @@ li p{
   left: 120px;
   top: 0px;
   background-color: #2f88ff;
-}
-.dropdown-menu-1 a{
-  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 .formulario , .menu-bar{
   display: inline-block;
    
 }
 .formulario{
-  background-color: black;
+  background-color:var(--conteudo);
   width: 1400px;
   position: absolute;
   left: 400px;
   top: 350px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .direita , .esquerda{
   display: inline-block;
 }
+.direita{
+  margin-left: 90px;
+}
+div.radio-grupo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  
+}
 .barra1{
   width: 650px;
   height: 30px;
+  font-size: 20px;
+  margin: 2px 0px 2px 0px;
 }
-input.barra1{
+.radio + .radio{
+  margin-left: 100px;
+}
+div.texto3{
+  position: absolute;
+  top: 520px;
+  width: 97%;
+  height: 30px;
+  text-align: center;
+  background-color: var(--letra);
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.formulario2{
+  position: absolute;
+  top: 600px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 0;
+}
+.esquerda2 , .direita2{
+  display: inline-block;
+} 
+.barra3{
+  width: 650px;
+  height: 30px;
   font-size: 20px;
   margin: 2px 0px 2px 0px;
 }

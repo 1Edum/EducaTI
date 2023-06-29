@@ -106,7 +106,7 @@
                               <div class="dropdown-menu-1">
                                 <ul>
                                   <li onclick="ano6a()">6 Ano A</li>
-                                  <li onclick="ano5b()">6 Ano B</li>
+                                  <li onclick="ano6b()">6 Ano B</li>
                                 </ul>
                               </div>
                             </li>                 
@@ -150,14 +150,51 @@
             </div>
             <div class="formulario">
               <div class="esquerda">
-                <input type="text" class="barra1" placeholder="Nome:">
-                <input type="text" class="barra1" placeholder="Email">
+              <div class="radio-grupo">
+                <label class="radio">
+                  <input type="radio" name="male" value="gender">
+                  Aluno
+                  <span></span>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="male" value="gender">
+                  Professor
+                  <span></span>
+                </label>
+                
+              </div> 
+                <input type="text" class="barra1" placeholder="Repetir Email">
+                <input type="text" class="barra1" placeholder="Criar Senha">
+                <input type="text" class="barra1" placeholder="Nome da Mãe">
 
               </div>
               <div class="direita">
-                <input type="text" class="barra1" placeholder="Sobrenome">
-                <input type="text" class="barra1" placeholder="Nome da Mãe">
+                <input type="text" class="barra1" placeholder="Criar Email">
+                <input type="text" class="barra1" placeholder="Repetir Senha">
+                <input type="text" class="barra1" placeholder="Nome Completo ">
+                <input type="number" class="barra1" placeholder="CPF">
               </div>
+            </div>
+            <div class="texto3">
+              Dados Cadastrais
+            </div>
+            <div class="center">
+            <div class="formulario2">
+              <div class="esquerda2">
+                Data de Nascimento
+                <input type="date" class="barra3" placeholder="Data de Nascimento">
+                <input type="text" class="barra3" placeholder="Rua">
+                <input type="text" class="barra3" placeholder="Bairro">
+                <input type="text" class="barra3" placeholder="Estado">
+              </div>
+              <div class="direita2">
+                Telefone/ Celular
+                <input type="number" class="barra3" >
+                <input type="number" class="barra3" placeholder="CEP">
+                <input type="number" class="barra3" placeholder="Complemento">
+                <input type="number" class="barra3" placeholder="Cidade">
+              </div>
+            </div>
             </div>
     <script src="/Java/Administrador.js"></script>
   </body>
