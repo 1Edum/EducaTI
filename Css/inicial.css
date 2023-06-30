@@ -24,7 +24,7 @@ header div#barra{
     height: 100px;
     background-color: #ffffff;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -50,8 +50,8 @@ div#dados p input{
     background: #F1F1F1;
     border-radius: 15px;
     font-size: 24px;
-    border: none; 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 div#dados p input#Iu{
     margin-top: 100px;
@@ -91,4 +91,13 @@ div#drop form select{
     height: 40px;
     color: #6B6666;
     text-align: center;
+}
+button.bot {
+    width: 150px;
+    height: 50px;
+    background-color: #2f88ff;
+    border-radius: 15px;
+    color: #ffffff;
+    margin-left: 900px;
+ 
 }
