@@ -116,3 +116,12 @@
     opacity: 1;
     animation: appear 0.3s both;
   }
+  div.perfi img{
+    width: 100px;
+  }
+
+  div.perfi{
+    display: flex;
+    align-items: center;
+    justify-self: end;
+  }
